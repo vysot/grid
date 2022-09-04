@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;1,700&display=swap');
+
+:root {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    --color-green: #29A71E;
+    --color-blue: #3675B0;
+    --color-red: #E13535;
+    --row-height: 50px;
+    --gap: 40px;
+    --padding: 10px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #ffb084;
+    padding: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(6, var(--row-height));
+    gap: var(--gap);
+    margin: 20px;
+    justify-content: center;
+}
+
+.grid-item {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding);
+}
+
+.one {
+    grid-row: 1/6;
+    height: calc(var(--row-height) * 5 + var(--gap) * 4 - var(--padding) * 2 - 30px);
+    box-shadow: 7px 7px 0px #000000;
+    align-items: center;
+}
+
+.two {
+    grid-column: 2/-1;
+    grid-row: 1/3;
+    height: calc(var(--row-height) * 2 + var(--gap) - var(--padding) * 2);
+    box-shadow: 7px 7px 0px #000000;
+}
+
+.three {
+    grid-column: 2;
+    grid-row: 3/5;
+    height: calc(var(--row-height) * 2 + var(--gap) - var(--padding) * 2 - 25px);
+    box-shadow: 7px 7px 0px var(--color-green);
+}
+
+.four {
+    grid-column: 3;
+    grid-row: 3/5;
+    height: calc(var(--row-height)*2 + var(--gap) - var(--padding) * 2 + 40px);
+    box-shadow: 7px 7px 0px var(--color-red);
+}
+
+.five {
+    grid-column: 1;
+    height: calc(var(--row-height) - var(--padding) * 2 + 30px);
+    align-self: end;
+    justify-content: center;
+    box-shadow: 7px 7px 0px #000000;
+}
+
+.six {
+    grid-column: 2;
+    grid-row: 5/7;
+    align-self: end;
+    height: calc(var(--row-height)*2 + var(--gap) - var(--padding) * 2 + 25px);
+    box-shadow: 7px 7px 0px var(--color-blue);
+}
+
+.seven {
+    grid-column: 3;
+    grid-row: 5/7;
+    align-self: end;
+    height: calc(var(--row-height) * 2 + var(--gap) - var(--padding) * 2 - 40px);
+    box-shadow: 7px 7px 0px #000000;
+    text-align: left;
+}
+
+.grid-item-img {
+    width: 100px;
+}
+
+.txt-small {
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+}
+
+.txt-big {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+.txt-five {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+.txt-bold {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 3rem;
+}
+
+.green {
+    color: var(--color-green);
+}
+
+.red {
+    color: var(--color-red);
+}
+
+.blue {
+    color: var(--color-blue);
+}
